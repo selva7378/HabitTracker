@@ -7,9 +7,11 @@ import SwiftUI
 
 @main
 struct HabitTrackerApp: App {
+    @State private var activities = Activities()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(activities: activities)
         }
     }
 }
